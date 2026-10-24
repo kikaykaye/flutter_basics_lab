@@ -1,3 +1,9 @@
+# GitHub Repository
+
+https://github.com/kikaykaye/flutter_basics_lab
+
+---
+
 # Review Questions — Flutter Basics Lab
 
 ### 1. What is the difference between a StatelessWidget and a StatefulWidget? Give one example of each from this lab.
@@ -10,7 +16,7 @@ A `StatefulWidget` uses two classes to separate the widget's configuration from 
 
 ### 3. In Activity 2, what happened when you changed `_glasses` outside `setState()`? Why?
 
-When I moved _glasses++ outside setState(), the counter still updated because I called setState(() {}) afterward. This showed me that changing a variable alone does not notify Flutter to rebuild the interface. The setState() call triggers the rebuild, so the counter displayed the new value.
+When I moved _glasses++ outside setState(), I learned that changing a variable alone does not notify Flutter to rebuild the interface. Calling setState() tells Flutter to rebuild the widget so the updated value can appear on the screen. I then restored the increment inside setState().
 
 ### 4. Looking at the Debug Console in Activity 2, when is `build()` called?
 
